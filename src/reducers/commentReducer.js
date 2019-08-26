@@ -1,8 +1,6 @@
 import { CREATE_COMMENT, DELETE_COMMENTS } from '../actions/commentActions';
 
-const initialState = {
-  comments: {}
-};
+const initialState = {};
 
 export default function reducer(state = initialState, action) {
   switch(action.type) {
