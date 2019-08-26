@@ -3,5 +3,13 @@ const initialState = {
 };
 
 export function reducer(state = initialState, action) {
-  return state;
+  switch(action.type) {
+    case 'CREATE_POST':
+      return { ...state, posts: [...state.posts, action.payload] };
+    case 'DELETE_POST':
+      return { ...state, posts: state.posts.filter(p => p !== action.payload) };
+    default:
+      return state;
+  }
 }
+
