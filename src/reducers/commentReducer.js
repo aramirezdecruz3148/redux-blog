@@ -1,7 +1,7 @@
 const initialState = {
-
+  comments: {}
 };
 
-export function reducer(state = intitalState, action) {
+export default function reducer(state = initialState, action) {
   return state;
 }
