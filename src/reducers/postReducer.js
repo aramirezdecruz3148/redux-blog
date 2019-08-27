@@ -7,11 +7,11 @@ const initialState = {
 export default function reducer(state = initialState, action) {
   switch(action.type) {
     case CREATE_POST:
-      return { ...state, posts: [...state.posts, action.payload] };
+      return { ...state, postsArray: [...state.postsArray, action.payload] };
     case DELETE_POST:
-      return { ...state, posts: [
-        ...state.posts.slice(0, action.payload.postIndex),
-        ...state.posts.slice(action.payload.postIndex + 1)
+      return { ...state, postsArray: [
+        ...state.postsArray.slice(0, action.payload.postIndex),
+        ...state.postsArray.slice(action.payload.postIndex + 1)
       ] };
     default:
       return state;
