@@ -9,6 +9,8 @@ const store = createStore(
 );
 
 store.dispatch(createComment({ postIndex: 0, comment: 'good' }));
+store.dispatch(createComment({ postIndex: 0, comment: 'goodjnnng' }));
+
 store.dispatch(createPost({ title: 'something', body: 'stuff' }));
 store.dispatch(deletePost({ postIndex: 0 }));
 export default store;
