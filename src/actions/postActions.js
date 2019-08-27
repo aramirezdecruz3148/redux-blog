@@ -5,7 +5,7 @@ export const createPost = post => ({
 });
 
 export const DELETE_POST = 'DELETE_POST';
-export const deletePost = (post, postIndex) => ({
+export const deletePost = (postIndex) => ({
   type: DELETE_POST,
-  payload: post, postIndex
+  payload: postIndex
 });
