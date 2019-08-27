@@ -5,7 +5,7 @@ function PostForm({ formSubmit, title, body }) {
   return (
     <form onSubmit={formSubmit}>
       <input type='text' name='title' value={title} />
-      <input type='text' name='body' value={body} />
+      <textarea name='body' value={body} />
       <button>Create Post</button>
     </form>
   );
